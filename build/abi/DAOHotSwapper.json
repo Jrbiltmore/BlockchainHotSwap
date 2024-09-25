@@ -1,5 +1,129 @@
-// Author: Jacob Thomas Messer
-// Phone: 6573469599
-
-// Author: Jacob Thomas Messer
-
+[
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "proposalId",
+                "type": "uint256"
+            }
+        ],
+        "name": "voteOnProposal",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "newContract",
+                "type": "address"
+            }
+        ],
+        "name": "createProposal",
+        "outputs": [
+            {
+                "name": "proposalId",
+                "type": "uint256"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "proposalId",
+                "type": "uint256"
+            }
+        ],
+        "name": "getProposalStatus",
+        "outputs": [
+            {
+                "name": "status",
+                "type": "string"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "proposalId",
+                "type": "uint256"
+            }
+        ],
+        "name": "executeProposal",
+        "outputs": [],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "proposalId",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "name": "proposer",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "name": "newContract",
+                "type": "address"
+            }
+        ],
+        "name": "ProposalCreated",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "proposalId",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "name": "voter",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "name": "vote",
+                "type": "bool"
+            }
+        ],
+        "name": "VoteCast",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "proposalId",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "name": "executor",
+                "type": "address"
+            }
+        ],
+        "name": "ProposalExecuted",
+        "type": "event"
+    }
+]
