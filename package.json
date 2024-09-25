@@ -1,0 +1,37 @@
+// Author: Jacob Thomas Messer
+// Phone: 6573469599
+
+// Author: Jacob Thomas Messer
+
+
+{
+  "name": "blockchain-hot-swapper",
+  "version": "1.0.0",
+  "description": "A comprehensive Blockchain Hot Swapper system with quantum-safe features, cross-chain compatibility, and modular architecture.",
+  "main": "truffle-config.js",
+  "scripts": {
+    "test": "truffle test",
+    "migrate": "truffle migrate",
+    "compile": "truffle compile"
+  },
+  "keywords": [
+    "blockchain",
+    "smart-contracts",
+    "hot-swapper",
+    "quantum-safe",
+    "cross-chain",
+    "modular",
+    "dao"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "openzeppelin-solidity": "^4.4.0",
+    "truffle": "^5.4.0",
+    "web3": "^1.5.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.1"
+  }
+}
