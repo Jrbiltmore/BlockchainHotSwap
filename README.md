@@ -24,5 +24,5 @@ This project requires **Node.js** and **Truffle** for development.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/jrbiltmore/blockchain-hot-swapper.git
-   cd blockchain-hot-swapper
+   git clone git@github.com:Jrbiltmore/BlockchainHotSwap.git
+   cd BlockchainHotSwap
